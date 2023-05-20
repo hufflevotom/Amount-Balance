@@ -38,7 +38,7 @@ const Title: React.FC<TitleProps> = (props) => {
 
   switch (props.color) {
     case "primary":
-      style.push("text-purple-500", "shadow-lg", "shadow-purple-500");
+      style.push("text-purple-500");
       break;
     default:
       style.push("text-white");
