@@ -10,7 +10,7 @@ const Paragraph: React.FC<ParagraphProps> = (props) => {
 
   switch (props.type) {
     case "details":
-      style.push("text-sm", "text-gray-500");
+      style.push("text-xs", "text-white", "mt-1");
       break;
     default:
       style.push("text-base", "text-white");
