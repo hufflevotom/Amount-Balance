@@ -1,6 +1,10 @@
 import { defineConfig } from "vite";
+import { resolve } from "path";
 import react from "@vitejs/plugin-react";
 
+function pathResolve(dir: string) {
+  return resolve(__dirname, ".", dir);
+}
 // https://vitejs.dev/config/
 export default defineConfig(async () => ({
   plugins: [react()],
@@ -23,5 +27,11 @@ export default defineConfig(async () => ({
     minify: !process.env.TAURI_DEBUG ? "esbuild" : false,
     // produce sourcemaps for debug builds
     sourcemap: !!process.env.TAURI_DEBUG,
+  },
+  resolve: {
+    alias: {
+      "@core": pathResolve("core"),
+      "@UI": pathResolve("src/UI"),
+    },
   },
 }));

@@ -1,1 +1,4 @@
-export { default as Icon } from './Icon';
+import { default as Default } from "./Icon";
+
+export { Outlined } from "./Outlined";
+export default Default;
