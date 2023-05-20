@@ -9,7 +9,7 @@ import {
 } from "@heroicons/react/24/outline";
 
 export type OutlinedProps = {
-  type: "home" | "close" | "add" | "menu" | "menu-close" | "search";
+  type: string;
   size?: "lg" | "md" | "sm";
   colored?: boolean;
 };

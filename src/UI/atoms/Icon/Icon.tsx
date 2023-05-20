@@ -9,7 +9,7 @@ import {
 } from "@heroicons/react/24/solid";
 
 export type IconProps = {
-  type: "home" | "close" | "add" | "menu" | "menu-close" | "search";
+  type: string;
   size?: "lg" | "md" | "sm";
   colored?: boolean;
 };

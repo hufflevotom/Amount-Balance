@@ -4,9 +4,13 @@ import { Header, Footer, SideBar } from "./layout";
 function App() {
   return (
     <GlobalProvider>
-      <Header />
-      <SideBar />
-      <Footer />
+      <div className="flex flex-row">
+        <SideBar />
+        <div className="flex flex-col">
+          <Header />
+          <Footer />
+        </div>
+      </div>
     </GlobalProvider>
   );
 }
