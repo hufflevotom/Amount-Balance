@@ -12,7 +12,6 @@ export type IconProps = {
   type: "home" | "close" | "add" | "menu" | "menu-close" | "search";
   size?: "lg" | "md" | "sm";
   colored?: boolean;
-  children: React.ReactNode;
 };
 
 const Icon: React.FC<IconProps> = (props) => {

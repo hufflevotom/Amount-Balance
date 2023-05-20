@@ -3,7 +3,7 @@ import React from "react";
 export type HeaderProps = {};
 
 const Header: React.FC<HeaderProps> = () => {
-  return <HeaderOrganism />;
+  return <div className="text-white">Header</div>;
 };
 
 export default Header;
